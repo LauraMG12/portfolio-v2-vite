@@ -143,6 +143,9 @@ watch(isMobileDevice, () => {
       align-items: flex-start;
       margin-bottom: 20px;
     }
+    @media screen and (max-width: $breackpoint-small) {
+      gap: 0px;
+    }
     & .project-title {
       text-wrap: nowrap;
     }
@@ -158,10 +161,9 @@ watch(isMobileDevice, () => {
       gap: 10px;
       mask: $white-mask;
       -webkit-maskmask: $white-mask;
+      -moz-user-maskmask: $white-mask;
+      -ms-user-maskmask: $white-mask;
       cursor: grab;
-      @media screen and (max-width: $breackpoint-small) {
-        justify-content: center;
-      }
     }
   }
   & .project-content {
@@ -207,6 +209,7 @@ watch(isMobileDevice, () => {
         border-radius: 10px;
         overflow: hidden;
         height: 20%;
+        width: 20%;
         & .sembo-logo {
           width: 100%;
           height: 100%;

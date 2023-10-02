@@ -23,6 +23,7 @@ const ICON_TYPE = [
   "logo",
   "mail",
   "mysql",
+  "netlify",
   "nodejs",
   "pinia",
   "plane",
@@ -34,7 +35,7 @@ const ICON_TYPE = [
   "success",
   "tools",
   "ts",
-  "vitest",
+  "vite",
   "vue",
 ] as const;
 
@@ -65,6 +66,7 @@ export const ICON_TYPE_MAP: Record<IconType, string> = {
   logo: "Logo",
   mail: "Mail",
   mysql: "MySQL",
+  netlify:"Netlify",
   nodejs: "NodeJS",
   pinia: "Pinia",
   plane: "PaperPlane",
@@ -76,7 +78,7 @@ export const ICON_TYPE_MAP: Record<IconType, string> = {
   success: "Success",
   tools: "Tools",
   ts: "TypeScript",
-  vitest: "Vitest",
+  vite: "Vite",
   vue: "Vue",
 };
 
@@ -269,6 +271,12 @@ export const SVG_ICON_DEFAULT_SETTINGS: Record<
     width: 20,
     height: 20,
   },
+  netlify: {
+    color: "currentColor",
+    colorProperty: "fill",
+    width: 20,
+    height: 20,
+  },
   nodejs: {
     color: "currentColor",
     colorProperty: "fill",
@@ -335,7 +343,7 @@ export const SVG_ICON_DEFAULT_SETTINGS: Record<
     width: 20,
     height: 20,
   },
-  vitest: {
+  vite: {
     color: "currentColor",
     colorProperty: "fill",
     width: 20,
