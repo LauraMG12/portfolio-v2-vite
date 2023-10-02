@@ -209,7 +209,7 @@ watch(isMobileDevice, () => {
         border-radius: 10px;
         overflow: hidden;
         height: 20%;
-        width: 20%;
+        aspect-ratio: 1.3/1;
         & .sembo-logo {
           width: 100%;
           height: 100%;
