@@ -53,7 +53,7 @@ export const projects: ProjectsSectionInfo = {
           { name: "GraphQL", iconName: "graphql" },
           { name: "StoryBook", iconName: "storybook" },
         ],
-        image: "../../../assets/trip-planner.webp",
+        image: "../../../../public/assets/trip-planner.webp",
         description: `As a Sembo Trip Planner key member, I contributed to develop an innovative travel tool that allows users to effortlessly crate full travel experiences integrating accommodation, transportation, and activities. Enhancing the travel experience, making it more enjoyable and accessible for everyone.`,
         runTo:
           "https://www.sembo.co.uk/travel/plan?pax=rpp&day=2023-10-28&suggest=Cheapest&rt=1",
@@ -114,21 +114,21 @@ export const projects: ProjectsSectionInfo = {
     {
       id: 1,
       title: "To do list",
-      image: "../../../assets/todo.webp",
+      image: "../../../../public/assets/todo.webp",
       description: `Responsive Todo List application, developed using Vue.js and TypeScript`,
       runTo: "https://github.com/LauraMG12/Todo",
     },
     {
       id: 2,
       title: "Users table",
-      image: "../../../assets/users-list.webp",
+      image: "../../../../public/assets/users-list.webp",
       description: `Project to improve API data and state management`,
       runTo: "https://github.com/LauraMG12/users-table",
     },
     {
       id: 3,
       title: "Online store",
-      image: "../../../assets/store.webp",
+      image: "../../../../public/assets/store.webp",
       description: `Project part of the Udemy course
       NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)`,
       runTo: "https://github.com/LauraMG12/Shop",
@@ -137,7 +137,7 @@ export const projects: ProjectsSectionInfo = {
     {
       id: 4,
       title: "Lecture list",
-      image: "../../../assets/lecture-list.webp",
+      image: "../../../../public/assets/lecture-list.webp",
       description: `Project to practice skills in handling user interactions, state management, data filtering and code structure`,
       runTo: "https://github.com/LauraMG12/Lecture-list",
       inProgress: true,

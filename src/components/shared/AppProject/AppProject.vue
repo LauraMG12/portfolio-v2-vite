@@ -16,7 +16,7 @@ interface DesktopProjectProps {
 const props = defineProps<DesktopProjectProps>();
 
 const projectImage = new URL(props.information.image, import.meta.url).href
-const semboImage = new URL('../../../assets/sembo1.webp', import.meta.url).href
+const semboImage = new URL('../../../../public/assets/sembo1.webp', import.meta.url).href
 
 const isOverlayExpanded = ref<boolean>(false);
 function toggleOverlayStatus(): void {
