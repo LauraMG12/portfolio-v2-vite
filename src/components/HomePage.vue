@@ -67,7 +67,7 @@ setInterval(() => {
     left: 0;
     width: 100vw;
     height: 100dvh;
-    background: url("../../public/assets/home-background.webp"), $grey-light 50%;
+    background: url("../assets/home-background.webp"), $grey-light 50%;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: top;
