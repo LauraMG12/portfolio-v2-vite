@@ -1,30 +1,88 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted, ref, watch } from "vue";
+
+import NavigationBar from "./components/NavigationBar.vue";
+import HomePage from "./components/HomePage.vue";
+import ProjectsSection from "./components/ProjectsSection.vue";
+import TechnologiesSection from "./components/TechnologiesSection.vue";
+import ExperienceSection from "./components/ExperienceSection.vue";
+import AboutSection from "./components/AboutSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/Footer.vue";
+
+import { isMobileNavigationOpened } from "@/state/AppState";
+
+const isScrollPositionOnTop = ref<boolean>(true);
+const body = document.body;
+
+onMounted(() => {
+  window.addEventListener("scroll", updateScroll);
+});
+function updateScroll() {
+  isScrollPositionOnTop.value = window.scrollY === 0;
+}
+watch(isMobileNavigationOpened, () => {
+  if (isMobileNavigationOpened.value) {
+    body.style.overflowY = "hidden";
+  } else {
+    body.style.overflowY = "auto";
+  }
+});
 </script>
 
-<template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+<template ref="app">
+  <header
+    id="navigation"
+    :class="{
+      'white-navigation': !isScrollPositionOnTop,
+    }"
+  >
+    <NavigationBar />
+  </header>
+  <main id="content">
+    <HomePage />
+    <ProjectsSection />
+    <TechnologiesSection />
+    <ExperienceSection />
+    <AboutSection />
+    <ContactSection />
+  </main>
+  <footer>
+    <FooterSection />
+  </footer>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style lang="scss">
+@import "@/styles/main.scss";
+
+#app {
+  #navigation {
+    width: 100vw;
+    position: fixed;
+    z-index: $navigation-index;
+    transition: $basic-transition-025;
+    --webkit-transition: $basic-transition-025;
+    &.white-navigation {
+      background-color: $white;
+      box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    gap: $sections-gap;
+    position: relative;
+  }
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.fade {
+  &-leave-from {
+    opacity: 1;
+  }
+  &-leave-to {
+    opacity: 0;
+  }
+  &-leave-active {
+    transition: opacity 0.5s;
+  }
 }
 </style>
