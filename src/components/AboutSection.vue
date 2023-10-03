@@ -36,8 +36,6 @@ function openCV(): void {
           <div class="circle-links">
             <div class="link">
               <a
-                aria-label="Open LinkedIn profile"
-                unselectable="on"
                 href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/"
                 target="_blank"
                 :class="{ colored: isTouchDevice() }"
@@ -47,8 +45,6 @@ function openCV(): void {
             </div>
             <div class="link">
               <a
-                aria-label="Open GitHub profile"
-                unselectable="on"
                 href="https://github.com/LauraMG12"
                 target="_blank"
                 :class="{ colored: isTouchDevice() }"
@@ -58,8 +54,6 @@ function openCV(): void {
             </div>
             <div class="link">
               <a
-                unselectable="on"
-                aria-label="Open email composer"
                 href="mailto:laura.lmg12@gmail.com"
                 :class="{ colored: isTouchDevice() }"
               >

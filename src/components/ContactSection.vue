@@ -18,8 +18,6 @@ import { contact } from "../content/Contact";
         </div>
         <h4>{{ contact.contactMessage }}</h4>
         <a
-          aria-label="Open email composer"
-          unselectable="on"
           :href="`mailto:${contact.professionalEmail}`"
           class="email-container"
         >

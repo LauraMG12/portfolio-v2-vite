@@ -79,8 +79,6 @@ watch(isMobileDevice, () => {
         </p>
         <div class="project-buttons-container">
           <a
-            aria-label="Open project code"
-            unselectable="on"
             target="_blank"
             :href="information.codeTo"
           >
@@ -91,8 +89,6 @@ watch(isMobileDevice, () => {
             />
           </a>
           <a
-            aria-label="Open project page"
-            unselectable="on"
             target="_blank"
             :href="information.runTo"
           >

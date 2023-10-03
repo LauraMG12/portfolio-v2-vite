@@ -15,8 +15,6 @@ const projectImage = new URL(props.information.image, import.meta.url).href
   <a
     class="card"
     :class="{ colored: isTouchDevice() }"
-    aria-label="Open subproject code"
-    unselectable="on"
     target="_blank"
     :href="information.runTo"
   >
