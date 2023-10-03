@@ -7,6 +7,7 @@ import LightButton from "./shared/AppButtons/LightButton.vue";
 import { scrollToSection } from "@/state/AppState";
 
 const homeContent = ref<HTMLDivElement | null>(null);
+const backgroundImage = new URL('/asset/backgroung-image.webp', import.meta.url).href
 const homeContentHeight = computed(
   () => `${homeContent.value?.clientHeight}px`
 );
@@ -19,7 +20,7 @@ setInterval(() => {
 </script>
 
 <template>
-  <img src="/asset/backgroung-image.webp" :style="{display:'none'}" />
+  <img :src="backgroundImage" :style="{display:'none'}" />
   <section id="homePage" class="content">
     <div class="background" />
     <div class="home-content" ref="homeContent">
