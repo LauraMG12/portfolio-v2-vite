@@ -7,7 +7,7 @@ import LightButton from "./shared/AppButtons/LightButton.vue";
 import { scrollToSection } from "@/state/AppState";
 
 const homeContent = ref<HTMLDivElement | null>(null);
-const backgroundImage = new URL('/asset/backgroung-image.webp', import.meta.url).href
+const backgroundImage = new URL('/asset/home-background.webp', import.meta.url).href
 const homeContentHeight = computed(
   () => `${homeContent.value?.clientHeight}px`
 );
