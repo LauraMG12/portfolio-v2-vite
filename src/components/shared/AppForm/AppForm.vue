@@ -64,25 +64,30 @@ async function submitForm() {
       type="hidden"
       name="from_name"
       value="IMPORTANT: portfolio message"
+      
     />
 
     <label for="email">{{ contact.email }}</label>
     <input
+      id="email"
       type="email"
       name="email"
       placeholder="Write your email"
       v-model="email"
       required
+      autocomplete="email"
     />
 
     <label for="message">{{ contact.message }}</label>
     <textarea
+      id="message"
       name="message"
       rows="10"
       cols="auto"
       placeholder="Write your message"
       v-model="message"
       required
+      autocomplete="off"
     />
     <button
       type="submit"
