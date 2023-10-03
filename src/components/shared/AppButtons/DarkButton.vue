@@ -23,8 +23,7 @@ const mobileIconSize = computed(() =>
 
 <template>
   <a
-    aria-label="Send email button"
-    unselectable="on"
+    aria-label="Redirect"
     target="_blank"
     role="button"
     class="button"

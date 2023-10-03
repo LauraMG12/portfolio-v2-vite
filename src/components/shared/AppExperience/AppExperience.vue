@@ -132,7 +132,7 @@ function getImgPath(imageName: string) {
   }
   & .details {
     & .detail {
-      color: #7d7d7d;
+      color: rgb(89, 89, 89);
       font-size: $font-size-small;
       @media screen and (max-width: $breackpoint-small) {
         font-size: $font-size-smallest;

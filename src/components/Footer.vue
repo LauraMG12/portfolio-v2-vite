@@ -18,6 +18,7 @@ const mobileIconSize = computed(() =>
     <div class="contact">
       <p class="footer-contact">
         <a
+        aria-label="Open LinkedIn profile"
           href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/"
           target="_blank"
           >{{ footer.linkedIn }}</a
@@ -25,12 +26,14 @@ const mobileIconSize = computed(() =>
       </p>
       <p class="footer-contact">
         <a
+        aria-label="Compose an email"
           :href="`mailto:${footer.professionalEmail}`"
           >{{ footer.professionalEmail }}</a
         >
       </p>
       <p class="footer-contact">
         <a
+        aria-label="Open Github profile"
           href="https://github.com/LauraMG12"
           target="_blank"
           >{{ footer.gitHub }}</a

@@ -79,6 +79,7 @@ watch(isMobileDevice, () => {
         </p>
         <div class="project-buttons-container">
           <a
+          aria-label="Open Github profile"
             target="_blank"
             :href="information.codeTo"
           >
@@ -89,6 +90,7 @@ watch(isMobileDevice, () => {
             />
           </a>
           <a
+          aria-label="Open project"
             target="_blank"
             :href="information.runTo"
           >

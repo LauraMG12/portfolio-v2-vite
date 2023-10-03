@@ -13,6 +13,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href
 
 <template>
   <a
+  aria-label="Open project"
     class="card"
     :class="{ colored: isTouchDevice() }"
     target="_blank"
