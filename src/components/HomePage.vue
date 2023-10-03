@@ -19,6 +19,7 @@ setInterval(() => {
 </script>
 
 <template>
+  <img src="/asset/backgroung-image.webp" :style="{display:'none'}" />
   <section id="homePage" class="content">
     <div class="background" />
     <div class="home-content" ref="homeContent">
