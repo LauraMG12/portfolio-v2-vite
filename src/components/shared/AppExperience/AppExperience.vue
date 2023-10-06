@@ -55,7 +55,7 @@ function getImgPath(imageName: string) {
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .experience-wrapper {
   width: 50%;
   display: flex;
@@ -80,7 +80,7 @@ function getImgPath(imageName: string) {
   }
   &.left {
     border-right: 3px solid $grey-light;
-    transform: translateX(2px);
+    transform: translateX(3px);
     padding: 20px 50px 20px 0;
     align-items: end;
     text-align: end;

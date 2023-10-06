@@ -110,6 +110,10 @@ function openCV(): void {
       border-radius: 20px;
       overflow: hidden;
       margin-right: 50px;
+      background-color: #f6f8fb;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       @media screen and (max-width: $breackpoint-medium) {
         margin-right: 0;
         margin-bottom: 15px;
@@ -119,7 +123,6 @@ function openCV(): void {
         width: 100%;
       }
       & .image {
-        width: 100%;
         height: 100%;
         object-fit: contain;
       }
