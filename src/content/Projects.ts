@@ -138,7 +138,7 @@ export const projects: ProjectsSectionInfo = {
       id: 4,
       title: "Lecture list",
       image: "/assets/lecture-list.webp",
-      description: `Project to practice skills in handling user interactions, state management, data filtering and code structure`,
+      description: `This project aims to test my skills in user interaction handling, state management, data filtering, and code structuring`,
       runTo: "https://github.com/LauraMG12/Lecture-list",
       inProgress: true,
     },
