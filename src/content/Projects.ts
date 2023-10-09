@@ -122,7 +122,7 @@ export const projects: ProjectsSectionInfo = {
       id: 2,
       title: "Users table",
       image: "/assets/users-list.webp",
-      description: `Project to improve API data and state management`,
+      description: `User list table project with fetched data from an API to improve state management using Pinia`,
       runTo: "https://github.com/LauraMG12/users-table",
     },
     {
@@ -130,7 +130,7 @@ export const projects: ProjectsSectionInfo = {
       title: "Online store",
       image: "/assets/store.webp",
       description: `Project part of the Udemy course
-      NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)`,
+      "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)"`,
       runTo: "https://github.com/LauraMG12/Shop",
       inProgress: true,
     },
