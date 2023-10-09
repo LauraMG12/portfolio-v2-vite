@@ -21,7 +21,7 @@ export const technologies: TechnologiesSectionInfo = {
   technologies: [
     {
       color: "blue",
-      group: "Front end - Delivery",
+      group: "Frontend - Delivery",
       technologies: [
         {
           name: "HTML",
@@ -46,7 +46,7 @@ export const technologies: TechnologiesSectionInfo = {
     },
     {
       color: "pink",
-      group: "Front end - Discovery",
+      group: "Frontend - Discovery",
       technologies: [
         {
           name: "Figma",
