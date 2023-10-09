@@ -12,13 +12,19 @@ interface AppPillProps {
 }
 const props = defineProps<AppPillProps>();
 const iconSize = computed(() =>
-  isSmallDevice.value ? { width: 18, height: 18 } : undefined
+  isSmallDevice.value ? { width: 18, height: 18 } : { width: 20, height: 20 }
 );
+const translatePiniaIcon = { x: 2 };
 </script>
 
 <template>
   <div class="pill-container" :class="[props.color]">
-    <SvgIcon v-if="props.iconName" :name="props.iconName" :size="iconSize" />
+    <SvgIcon
+      v-if="props.iconName"
+      :name="props.iconName"
+      :size="iconSize"
+      :translate="props.iconName === 'pinia' ? translatePiniaIcon : undefined"
+    />
     <p v-if="props.name && !props.shouldHideText" class="pill-text">
       {{ props.name }}
     </p>
@@ -26,7 +32,7 @@ const iconSize = computed(() =>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .pill-container {
   padding: 5px 10px;
   border-radius: 20px;

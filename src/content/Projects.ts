@@ -45,8 +45,9 @@ export const projects: ProjectsSectionInfo = {
         title: "Sembo - Trip planner",
         technologies: [
           { name: "Sass", iconName: "sass" },
-          { name: "TypeScript", iconName: "ts" },
           { name: "Vue3", iconName: "vue" },
+          { name: "TypeScript", iconName: "ts" },
+          { name: "Pinia", iconName: "pinia" },
           { name: "Jest", iconName: "jest" },
           { name: "Cypress", iconName: "cypress" },
           { name: "RxJs", iconName: "rxjs" },
