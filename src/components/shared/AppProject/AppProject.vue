@@ -15,8 +15,8 @@ interface DesktopProjectProps {
 }
 const props = defineProps<DesktopProjectProps>();
 
-const projectImage = new URL(props.information.image, import.meta.url).href
-const semboImage = new URL('/assets/sembo1.webp', import.meta.url).href
+const projectImage = new URL(props.information.image, import.meta.url).href;
+const semboImage = new URL("/assets/sembo1.webp", import.meta.url).href;
 
 const isOverlayExpanded = ref<boolean>(false);
 function toggleOverlayStatus(): void {
@@ -66,11 +66,7 @@ watch(isMobileDevice, () => {
         </div>
         <img alt="project image" class="image" :src="projectImage" />
         <div v-if="props.id === 1" class="sembo-logo-container">
-          <img
-            alt="Sembo logo"
-            class="sembo-logo"
-            :src="semboImage"
-          />
+          <img alt="Sembo logo" class="sembo-logo" :src="semboImage" />
         </div>
       </div>
       <div class="project-aside">
@@ -79,7 +75,7 @@ watch(isMobileDevice, () => {
         </p>
         <div class="project-buttons-container">
           <a
-          aria-label="Open Github profile"
+            aria-label="Open Github profile"
             target="_blank"
             :href="information.codeTo"
           >
@@ -90,7 +86,7 @@ watch(isMobileDevice, () => {
             />
           </a>
           <a
-          aria-label="Open project"
+            aria-label="Open project"
             target="_blank"
             :href="information.runTo"
           >
@@ -107,7 +103,7 @@ watch(isMobileDevice, () => {
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .project-container {
   width: 100%;
   padding: 1.5rem;
@@ -148,7 +144,7 @@ watch(isMobileDevice, () => {
       text-wrap: nowrap;
     }
     & .project-technologies {
-      overflow: hidden;
+      overflow: auto;
       display: flex;
       position: relative;
       white-space: nowrap;
@@ -162,6 +158,26 @@ watch(isMobileDevice, () => {
       -moz-user-maskmask: $white-mask;
       -ms-user-maskmask: $white-mask;
       cursor: grab;
+      padding-bottom: 2px;
+
+      &::-webkit-scrollbar {
+        height: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $grey-light;
+        border-radius: 20px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $grey-medium;
+      }
     }
   }
   & .project-content {
