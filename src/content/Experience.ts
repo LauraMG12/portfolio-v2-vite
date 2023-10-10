@@ -29,7 +29,8 @@ export const experience: ExperienceSectionInfo = {
         description: `[Travel industry]`,
         details: [
           "Good practices and SOLID principles",
-          "CI/CD and SCRUM",
+          "CI/CD",
+          "Agile methodology (SCRUM)",
           "Multidisciplinary and international environment",
         ],
       },
