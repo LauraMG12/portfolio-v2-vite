@@ -11,9 +11,8 @@ export const about: AboutInfo = {
   name: "Laura Mañogil González",
   position: "Frontend developer",
   imageName: "/assets/about.webp",
-  about: `+2 years experience as VueJS frontend developer. Skilled at translating
-  design concepts into pixel-perfect, responsive, and user-friendly websites.
-  Demonstrated ability to collaborate effectively with cross-functional teams
-  and a passion for staying updated with emerging trends. Eager to
-  contribute in creating stunning and highly performing web experiences.`,
+  about: `Dedicated Frontend Developer with experience in crafting engaging and responsive web applications. 
+  Skilled in translating design concepts into seamless user experiences and optimizing website performance. 
+  Strong collaborator in cross-functional teams, committed to staying updated on industry best practices for 
+  creating exceptional frontend solutions.`,
 };
