@@ -64,7 +64,6 @@ async function submitForm() {
       type="hidden"
       name="from_name"
       value="IMPORTANT: portfolio message"
-      
     />
 
     <label for="email">{{ contact.email }}</label>
@@ -105,7 +104,7 @@ async function submitForm() {
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .contact-form {
   width: 40%;
   display: flex;
@@ -143,10 +142,6 @@ async function submitForm() {
   .submit-button {
     width: fit-content;
     height: fit-content;
-    &:disabled,
-    :deep(.button) {
-      cursor: default;
-    }
   }
 }
 </style>
