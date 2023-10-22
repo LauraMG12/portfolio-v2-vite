@@ -117,7 +117,7 @@ export const projects: ProjectsSectionInfo = {
       title: "To do list",
       image: "/assets/todo.webp",
       description: `Responsive Todo List application, developed using Vue.js and TypeScript`,
-      runTo: "https://github.com/LauraMG12/Todo",
+      runTo: "https://github.com/LauraMG12/Todo-list",
     },
     {
       id: 2,
