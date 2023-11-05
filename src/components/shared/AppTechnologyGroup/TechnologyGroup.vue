@@ -72,7 +72,7 @@ const translateIcon = { x: 2, y: 0 };
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .technologies-group {
   @media screen and (min-width: $breackpoint-large) {
     width: 1065px;
@@ -124,13 +124,14 @@ const translateIcon = { x: 2, y: 0 };
     margin: 30px;
     height: 0;
     overflow: hidden;
+    opacity: 0;
 
     transition: $basic-transition-05;
     --webkit-transition: $basic-transition-05;
 
     &.opened {
       height: v-bind(groupHeight);
-
+      opacity: 1;
       margin-bottom: 40px;
     }
     & .techGroup {
