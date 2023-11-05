@@ -170,13 +170,13 @@ watch(isMobileDevice, () => {
 
       /* Handle */
       &::-webkit-scrollbar-thumb {
-        background: $grey-light;
+        background: $grey-medium;
         border-radius: 20px;
       }
 
       /* Handle on hover */
       &::-webkit-scrollbar-thumb:hover {
-        background: $grey-medium;
+        background: $grey;
       }
     }
   }
