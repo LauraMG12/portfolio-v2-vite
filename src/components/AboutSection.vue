@@ -25,7 +25,12 @@ function openCV(): void {
     </div>
     <div class="about-content">
       <div class="image-container">
-        <img alt="professional image" class="image" :src="aboutImage" />
+        <img
+          alt="professional image"
+          class="image"
+          :src="aboutImage"
+          loading="lazy"
+        />
       </div>
       <div class="about">
         <p>

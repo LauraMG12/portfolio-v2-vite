@@ -64,9 +64,19 @@ watch(isMobileDevice, () => {
         <div v-if="isMobileDevice" class="icon-container">
           <SvgIcon name="arrow" color="white" />
         </div>
-        <img alt="project image" class="image" :src="projectImage" />
+        <img
+          alt="project image"
+          class="image"
+          :src="projectImage"
+          loading="lazy"
+        />
         <div v-if="props.id === 1" class="sembo-logo-container">
-          <img alt="Sembo logo" class="sembo-logo" :src="semboImage" />
+          <img
+            alt="Sembo logo"
+            class="sembo-logo"
+            :src="semboImage"
+            loading="lazy"
+          />
         </div>
       </div>
       <div class="project-aside">

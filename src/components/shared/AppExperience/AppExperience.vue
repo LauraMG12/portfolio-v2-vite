@@ -30,7 +30,12 @@ function getImgPath(imageName: string) {
         v-for="logo in props.info.info.companyLogo"
         :key="logo"
       >
-        <img :src="getImgPath(logo)" class="logo" :alt="altText" />
+        <img
+          :src="getImgPath(logo)"
+          class="logo"
+          :alt="altText"
+          loading="lazy"
+        />
       </div>
     </div>
     <h3 class="company-name">

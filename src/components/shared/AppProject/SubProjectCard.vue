@@ -20,7 +20,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
     rel="noreferrer"
     :href="information.runTo"
   >
-    <img alt="project image" class="image" :src="projectImage" />
+    <img alt="project image" class="image" :src="projectImage" loading="lazy" />
     <div class="card-content">
       <div class="card-header">
         <header class="title-wrapper">
