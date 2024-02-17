@@ -27,7 +27,7 @@ export function toggleNavigationState(): void {
 export function scrollToSection(targetId: string): void {
   const section = document.getElementById(targetId);
   const top = section?.offsetTop;
-  if (top && top != 0) {
+  if (top && top !== 0) {
     const scrollTo = top - 100;
     window.scroll({ top: scrollTo, left: 0, behavior: "smooth" });
   } else {

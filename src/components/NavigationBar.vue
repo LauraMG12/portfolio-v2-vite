@@ -34,41 +34,41 @@ watch(isSmallDevice, () => {
       @click="toggleNavigationState()"
       class="header"
     />
-    <div v-else class="navigation-items">
-      <div
+    <ul v-else class="navigation-items">
+      <li
         v-for="section in sections"
         :key="section.id"
         class="item-container"
         :class="{ selected: section.isSelected }"
         @click="scrollToSection(section.goTo)"
       >
-        <p class="item" :class="{ selected: section.isSelected }">
+        <a class="item" :class="{ selected: section.isSelected }">
           {{ section.title }}
-        </p>
-      </div>
-    </div>
+        </a>
+      </li>
+    </ul>
     <Transition name="slide-down">
-      <nav
+      <ul
         v-if="isMobileNavigationOpened && isSmallDevice"
         class="mobile-navigation"
       >
-        <div
+        <li
           v-for="section in sections"
           :key="section.id"
           class="item-container"
           @click="scrollToSection(section.goTo)"
         >
-          <p class="item" :class="{ selected: section.isSelected }">
+          <a class="item" :class="{ selected: section.isSelected }">
             {{ section.title }}
-          </p>
-        </div>
-      </nav>
+          </a>
+        </li>
+      </ul>
     </Transition>
   </nav>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .navigation {
   margin: 0 50px;
   height: $navigation-height;
@@ -92,19 +92,14 @@ watch(isSmallDevice, () => {
     & .item-container {
       padding: 5px 10px;
       border-radius: 20px;
+      list-style-type: none;
       gap: 45px;
       &:hover {
         cursor: pointer;
       }
-      &.selected {
-        background-color: $grey-light;
-      }
       & .item {
         color: $grey;
         font-size: $font-size-p-mobile;
-        &.selected {
-          color: $black;
-        }
         &:hover {
           @media (hover: hover) {
             color: $black;
@@ -133,6 +128,8 @@ watch(isSmallDevice, () => {
     padding: 15px 0 15px 5px;
     width: 100%;
     border-bottom: 1px solid $grey-light;
+    list-style-type: none;
+
     &:first-child {
       margin-top: 30px;
     }
@@ -144,9 +141,6 @@ watch(isSmallDevice, () => {
         @media (hover: hover) {
           color: $black;
         }
-      }
-      &.selected {
-        color: $black;
       }
     }
   }
