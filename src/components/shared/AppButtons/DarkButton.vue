@@ -25,6 +25,7 @@ const mobileIconSize = computed(() =>
   <a
     aria-label="Redirect"
     target="_blank"
+    rel="noreferrer"
     role="button"
     class="button"
     :href="props.href"
@@ -43,7 +44,7 @@ const mobileIconSize = computed(() =>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .button {
   background-color: black;
   color: $white;

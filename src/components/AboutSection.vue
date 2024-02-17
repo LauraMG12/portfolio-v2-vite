@@ -17,12 +17,12 @@ function openCV(): void {
 <template>
   <section id="aboutSection" class="content">
     <h2 class="section-title">{{ about.sectionTitle }}</h2>
-    <header class="about-header">
+    <div class="about-header">
       <h3>{{ about.name }}</h3>
       <div class="about-subheader">
         <AppPill :name="about.position" color="light" class="frontend-pill" />
       </div>
-    </header>
+    </div>
     <div class="about-content">
       <div class="image-container">
         <img alt="professional image" class="image" :src="aboutImage" />
@@ -39,6 +39,7 @@ function openCV(): void {
                 aria-label="Open LinkedIn profile"
                 href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/"
                 target="_blank"
+                rel="noreferrer"
                 :class="{ colored: isTouchDevice() }"
               >
                 <SvgIcon name="linkedin" :size="iconSize" />
@@ -49,6 +50,7 @@ function openCV(): void {
                 aria-label="Open Github profile"
                 href="https://github.com/LauraMG12"
                 target="_blank"
+                rel="noreferrer"
                 :class="{ colored: isTouchDevice() }"
               >
                 <SvgIcon name="github" :size="iconSize" />

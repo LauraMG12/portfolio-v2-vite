@@ -17,6 +17,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
     class="card"
     :class="{ colored: isTouchDevice() }"
     target="_blank"
+    rel="noreferrer"
     :href="information.runTo"
   >
     <img alt="project image" class="image" :src="projectImage" />

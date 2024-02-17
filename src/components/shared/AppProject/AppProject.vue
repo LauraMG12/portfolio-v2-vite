@@ -77,6 +77,7 @@ watch(isMobileDevice, () => {
           <a
             aria-label="Open Github profile"
             target="_blank"
+            rel="noreferrer"
             :href="information.codeTo"
           >
             <DarkButton
@@ -88,6 +89,7 @@ watch(isMobileDevice, () => {
           <a
             aria-label="Open project"
             target="_blank"
+            rel="noreferrer"
             :href="information.runTo"
           >
             <SimpleButton
