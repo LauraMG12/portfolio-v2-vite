@@ -8,12 +8,12 @@ interface SubProjectCardProps {
 }
 const props = defineProps<SubProjectCardProps>();
 
-const projectImage = new URL(props.information.image, import.meta.url).href
+const projectImage = new URL(props.information.image, import.meta.url).href;
 </script>
 
 <template>
   <a
-  aria-label="Open project"
+    aria-label="Open project"
     class="card"
     :class="{ colored: isTouchDevice() }"
     target="_blank"
@@ -22,7 +22,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href
     <img alt="project image" class="image" :src="projectImage" />
     <div class="card-content">
       <div class="card-header">
-        <div class="title-wrapper">
+        <header class="title-wrapper">
           <h3 class="project-title">{{ information.title }}</h3>
           <p
             class="project-description"
@@ -30,7 +30,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href
           >
             [In progress]
           </p>
-        </div>
+        </header>
         <p class="project-description">
           {{ information.description }}
         </p>
@@ -43,7 +43,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .card {
   border-radius: 10px;
   overflow: hidden;

@@ -6,17 +6,17 @@ import AppExperience from "../components/shared/AppExperience/AppExperience.vue"
 <template>
   <section id="experienceSection" class="content">
     <h2 class="section-title">{{ experience.sectionTitle }}</h2>
-    <div class="experience-container">
+    <article class="experience-container">
       <AppExperience
         v-for="singleExperience in experience.experiences"
         :info="singleExperience"
         :key="singleExperience.color"
       />
-    </div>
+    </article>
   </section>
 </template>
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 #experienceSection {
   display: flex;
   flex-direction: column;

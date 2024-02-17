@@ -12,13 +12,13 @@ const mobileIconSize = computed(() =>
 </script>
 
 <template>
-  <div id="footer">
+  <section id="footer">
     <SvgIcon name="logo" :size="mobileIconSize" color="white" />
     <p class="name">{{ footer.name }}</p>
     <div class="contact">
       <p class="footer-contact">
         <a
-        aria-label="Open LinkedIn profile"
+          aria-label="Open LinkedIn profile"
           href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/"
           target="_blank"
           >{{ footer.linkedIn }}</a
@@ -26,26 +26,27 @@ const mobileIconSize = computed(() =>
       </p>
       <p class="footer-contact">
         <a
-        aria-label="Compose an email"
+          aria-label="Compose an email"
           :href="`mailto:${footer.professionalEmail}`"
           >{{ footer.professionalEmail }}</a
         >
       </p>
       <p class="footer-contact">
         <a
-        aria-label="Open Github profile"
+          aria-label="Open Github profile"
           href="https://github.com/LauraMG12"
           target="_blank"
           >{{ footer.gitHub }}</a
         >
       </p>
     </div>
+
     <p class="authory">@ <span>Laura Mañogil</span> Portfolio 2023</p>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 #footer {
   width: 100vw;
   height: 15rem;

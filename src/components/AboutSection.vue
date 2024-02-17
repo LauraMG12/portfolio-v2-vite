@@ -17,12 +17,12 @@ function openCV(): void {
 <template>
   <section id="aboutSection" class="content">
     <h2 class="section-title">{{ about.sectionTitle }}</h2>
-    <div class="about-header">
+    <header class="about-header">
       <h3>{{ about.name }}</h3>
       <div class="about-subheader">
         <AppPill :name="about.position" color="light" class="frontend-pill" />
       </div>
-    </div>
+    </header>
     <div class="about-content">
       <div class="image-container">
         <img alt="professional image" class="image" :src="aboutImage" />

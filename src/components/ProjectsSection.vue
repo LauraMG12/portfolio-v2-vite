@@ -8,7 +8,7 @@ import { projects } from "../content/Projects";
 <template>
   <section id="projectsSection" class="content">
     <h2 class="section-title">{{ projects.sectionTitle }}</h2>
-    <div class="projects-container">
+    <article class="projects-container">
       <AppProject
         v-for="project in projects.projects"
         :key="project.id"
@@ -16,18 +16,18 @@ import { projects } from "../content/Projects";
         :information="project.info"
         :id="project.id"
       />
-    </div>
+    </article>
   </section>
-  <div class="sub-projects">
+  <article class="sub-projects">
     <SubProjectCard
       v-for="subProject in projects.subProjects"
       :key="subProject.id"
       :information="subProject"
     />
-  </div>
+  </article>
 </template>
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 #projectsSection {
   display: flex;
   flex-direction: column;

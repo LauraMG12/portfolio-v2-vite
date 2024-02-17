@@ -37,9 +37,9 @@ watch(isMobileDevice, () => {
 
 <template>
   <div class="project-container" :class="[props.color]">
-    <div class="project-header">
+    <header class="project-header">
       <h3 class="project-title">{{ information.title }}</h3>
-      <div class="project-technologies" v-dragscroll>
+      <aside class="project-technologies" v-dragscroll>
         <AppPill
           v-for="technology in information.technologies"
           :key="technology.name"
@@ -48,8 +48,8 @@ watch(isMobileDevice, () => {
           :icon-name="technology.iconName"
           :color="pillColor"
         />
-      </div>
-    </div>
+      </aside>
+    </header>
     <div class="project-content">
       <div class="project-image" @click="toggleOverlayStatus">
         <div

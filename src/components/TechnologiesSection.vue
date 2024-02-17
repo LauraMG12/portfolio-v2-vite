@@ -6,17 +6,17 @@ import TechnologyGroup from "./shared/AppTechnologyGroup/TechnologyGroup.vue";
 <template>
   <section id="technologiesSection" class="content">
     <h2 class="section-title">{{ technologies.sectionTitle }}</h2>
-    <div class="technologies-container">
+    <article class="technologies-container">
       <TechnologyGroup
         v-for="technologyGroup in technologies.technologies"
         :key="technologyGroup.group"
         :information="technologyGroup"
       />
-    </div>
+    </article>
   </section>
 </template>
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 #technologiesSection {
   display: flex;
   flex-direction: column;

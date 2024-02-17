@@ -37,12 +37,12 @@ const translateIcon = { x: 2, y: 0 };
 <template>
   <div class="technologies-group">
     <div class="group-title" @click="toggleGroupInfoVisibility()">
-      <div class="header">
+      <header class="header">
         <div class="icon-container" :class="{ down: isGroupOpened }">
           <SvgIcon name="arrow" />
         </div>
         <h3 class="title">{{ information.group }}</h3>
-      </div>
+      </header>
       <div class="underline" :class="[props.information.color]"></div>
     </div>
     <div class="group-container" :class="{ opened: isGroupOpened }">

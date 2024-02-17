@@ -8,7 +8,7 @@ import { contact } from "../content/Contact";
 </script>
 
 <template>
-  <div id="contactSection" class="content">
+  <section id="contactSection" class="content">
     <div class="contact-header">
       <SvgIcon v-if="!isSmallDevice" name="bubble" />
       <div class="info">
@@ -18,7 +18,7 @@ import { contact } from "../content/Contact";
         </div>
         <h4>{{ contact.contactMessage }}</h4>
         <a
-        aria-label="Compose an email"
+          aria-label="Compose an email"
           :href="`mailto:${contact.professionalEmail}`"
           class="email-container"
         >
@@ -31,11 +31,11 @@ import { contact } from "../content/Contact";
       </div>
     </div>
     <AppForm />
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 #contactSection {
   display: flex;
   justify-content: space-between;
