@@ -1,36 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { contact } from "../../../content/Contact";
-
 import DarkButton from "../../shared/AppButtons/DarkButton.vue";
+import { extractCorporativeName } from "./AppForm.helper";
 
-const emailDomains = [
-  "gmail",
-  "hotmail",
-  "outlook",
-  "yahoo",
-  "proton",
-  "mailbox",
-];
 const email = ref<string>("");
 const message = ref<string>("");
-function extractCorporativeName(): string {
-  if (email.value === "" || !email.value.includes("@")) {
-    return "";
-  }
-  const message = "New portfolio message from ";
-  const atPosition = email.value.indexOf("@");
-  const lastDotPosition = email.value.lastIndexOf(".");
-  const corporativeName = email.value.slice(atPosition + 1, lastDotPosition);
-  if (emailDomains.includes(corporativeName)) {
-    return message.concat("a company");
-  }
-  return message.concat(capitalize(corporativeName));
-}
-
-function capitalize(text: string): string {
-  return text[0].toUpperCase() + text.slice(1);
-}
+const defaultMessageHeader = "New portfolio message from ";
 
 const WEB3FORMS_ACCESS_KEY = "93c5dc5e-42e0-47b5-9436-b71bff45b79a";
 const loading = ref<boolean>(false);
@@ -59,7 +35,11 @@ async function submitForm() {
 
 <template>
   <form @submit.prevent="submitForm" class="contact-form">
-    <input type="hidden" name="subject" :value="extractCorporativeName()" />
+    <input
+      type="hidden"
+      name="subject"
+      :value="defaultMessageHeader.concat(extractCorporativeName(email))"
+    />
     <input
       type="hidden"
       name="from_name"

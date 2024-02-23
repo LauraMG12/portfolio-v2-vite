@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
+    "test": "vitest",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
@@ -16,9 +17,11 @@
     "vue-dragscroll": "^4.0.5"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vitest": "^0.32.0",
     "vue-tsc": "^1.8.5"
   }
 }
