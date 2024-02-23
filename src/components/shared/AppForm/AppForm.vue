@@ -35,11 +35,7 @@ async function submitForm() {
 
 <template>
   <form @submit.prevent="submitForm" class="contact-form">
-    <input
-      type="hidden"
-      name="subject"
-      :value="defaultMessageHeader.concat(extractCorporativeName(email))"
-    />
+    <input type="hidden" name="subject" :value="defaultMessageHeader" />
     <input
       type="hidden"
       name="from_name"
@@ -72,6 +68,7 @@ async function submitForm() {
       type="submit"
       class="submit-button"
       :disabled="loading || error || success"
+      @submit="defaultMessageHeader.concat(extractCorporativeName(email))"
     >
       <DarkButton
         :text="success ? 'Success' : error ? 'Error' : contact.sendMessage"
