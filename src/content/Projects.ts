@@ -115,21 +115,21 @@ export const projects: ProjectsSectionInfo = {
     {
       id: 1,
       title: "To do list",
-      image: "/assets/todo.webp",
+      image: "/assets/todo.png",
       description: `Responsive Todo List application, developed using Vue.js and TypeScript`,
       runTo: "https://github.com/LauraMG12/Todo-list",
     },
     {
       id: 2,
       title: "Users table",
-      image: "/assets/users-list.webp",
+      image: "/assets/users-list.png",
       description: `User list table project with fetched data from an API to improve state management using Pinia`,
       runTo: "https://github.com/LauraMG12/users-table",
     },
     {
       id: 3,
       title: "Online store",
-      image: "/assets/store.webp",
+      image: "/assets/store.png",
       description: `Project part of the Udemy course
       "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)"`,
       runTo: "https://github.com/LauraMG12/Shop",
