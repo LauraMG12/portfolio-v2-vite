@@ -113,6 +113,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
       }
       .title-wrapper {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
       }
     }
