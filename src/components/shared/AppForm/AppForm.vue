@@ -71,6 +71,7 @@ async function submitForm() {
       @submit="defaultMessageHeader.concat(extractCorporativeName(email))"
     >
       <DarkButton
+        id="ContactFormSubmitButton"
         :text="success ? 'Success' : error ? 'Error' : contact.sendMessage"
         :icon-name="success ? 'success' : error ? 'error' : 'plane'"
         :is-loading="loading"

@@ -18,6 +18,7 @@ import { contact } from "../content/Contact";
         </div>
         <h4>{{ contact.contactMessage }}</h4>
         <a
+          id="ContactEmailButton"
           aria-label="Compose an email"
           :href="`mailto:${contact.professionalEmail}`"
           class="email-container"

@@ -44,17 +44,17 @@ setInterval(() => {
       </div>
       <div class="buttons-container">
         <DarkButton
+          id="homePageLinkedInButton"
           :text="home.linkedIn.text"
           :href="home.linkedIn.href"
           icon-name="linkedin"
           class="home-button"
-          id="homePageLinkedInButton"
         />
         <LightButton
+          id="homePageContactButton"
           :text="home.contact.text"
           :gradient-color="highlights[highlightsIndex].color"
           @click="scrollToSection(home.contact.goTo)"
-          id="homePageContactButton"
         />
       </div>
     </div>

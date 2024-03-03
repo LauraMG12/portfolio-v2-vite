@@ -37,10 +37,16 @@ function openCV(): void {
           {{ about.about }}
         </p>
         <div class="links-container">
-          <DarkButton text="Open CV" icon-name="download" @click="openCV()" />
+          <DarkButton
+            id="AboutCVButton"
+            text="Open CV"
+            icon-name="download"
+            @click="openCV()"
+          />
           <div class="circle-links">
             <div class="link">
               <a
+                id="AboutLinkedInButton"
                 aria-label="Open LinkedIn profile"
                 href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/"
                 target="_blank"
@@ -52,6 +58,7 @@ function openCV(): void {
             </div>
             <div class="link">
               <a
+                id="AboutGitHubButton"
                 aria-label="Open Github profile"
                 href="https://github.com/LauraMG12"
                 target="_blank"
@@ -63,6 +70,7 @@ function openCV(): void {
             </div>
             <div class="link">
               <a
+                id="AboutEmailButton"
                 aria-label="Compose an email"
                 href="mailto:laura.lmg12@gmail.com"
                 :class="{ colored: isTouchDevice() }"
