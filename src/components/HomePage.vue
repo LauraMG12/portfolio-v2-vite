@@ -48,11 +48,13 @@ setInterval(() => {
           :href="home.linkedIn.href"
           icon-name="linkedin"
           class="home-button"
+          id="homePageLinkedInButton"
         />
         <LightButton
           :text="home.contact.text"
           :gradient-color="highlights[highlightsIndex].color"
           @click="scrollToSection(home.contact.goTo)"
+          id="homePageContactButton"
         />
       </div>
     </div>
