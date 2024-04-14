@@ -171,7 +171,6 @@ function openCV(): void {
               @media (hover: hover) {
                 & a {
                   color: $blue-dark;
-                  transform: rotateY(360deg);
                 }
               }
             }
