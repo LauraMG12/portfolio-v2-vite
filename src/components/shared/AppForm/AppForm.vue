@@ -95,15 +95,15 @@ async function submitForm() {
   &:deep(.button) {
     align-self: end;
   }
-  & label {
+  label {
     margin-top: 15px;
     font-size: $font-size-p-mobile;
     font-family: $font-primary;
     color: $grey-dark;
     margin-left: 10px;
   }
-  & input,
-  & textarea {
+  input,
+  textarea {
     resize: none;
     border: 2px solid $grey-light;
     border-radius: 10px;

@@ -77,14 +77,14 @@ const translateIcon = { x: 2, y: 0 };
   @media screen and (min-width: $breackpoint-large) {
     width: 1065px;
   }
-  & .group-title {
+  .group-title {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    & .header {
+    .header {
       display: flex;
       align-items: center;
-      & .icon-container {
+      .icon-container {
         transition: $transform-transition-05;
         --webkit-transition: $transform-transition-05;
         &.down {
@@ -92,7 +92,7 @@ const translateIcon = { x: 2, y: 0 };
         }
       }
     }
-    & .underline {
+    .underline {
       width: 100%;
       height: 10px;
       border-radius: 10px;
@@ -109,7 +109,7 @@ const translateIcon = { x: 2, y: 0 };
         background: $orange-gradient-opacity-90;
       }
     }
-    & .title {
+    .title {
       padding: 15px 30px;
       font-weight: $font-weight-bold;
       font-size: $font-size-p-desktop;
@@ -120,7 +120,7 @@ const translateIcon = { x: 2, y: 0 };
       }
     }
   }
-  & .group-container {
+  .group-container {
     margin: 30px;
     height: 0;
     overflow: hidden;
@@ -134,14 +134,14 @@ const translateIcon = { x: 2, y: 0 };
       opacity: 1;
       margin-bottom: 40px;
     }
-    & .techGroup {
+    .techGroup {
       height: fit-content;
       display: flex;
       column-gap: 50px;
       row-gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
-      & .technology-wraper {
+      .technology-wraper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,7 +151,7 @@ const translateIcon = { x: 2, y: 0 };
           width: 70px;
         }
 
-        & .technology-name {
+        .technology-name {
           color: $grey;
           text-align: center;
           font-size: $font-size-small;

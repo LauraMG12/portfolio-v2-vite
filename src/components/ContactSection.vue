@@ -55,7 +55,7 @@ import { contact } from "../content/Contact";
     @media screen and (max-width: $breackpoint-medium) {
       width: 100%;
     }
-    & .info {
+    .info {
       position: absolute;
       top: 145px;
       left: 115px;
@@ -68,9 +68,9 @@ import { contact } from "../content/Contact";
         left: 0;
         gap: 10px;
       }
-      & .info-title {
+      .info-title {
         position: relative;
-        & h3 {
+        h3 {
           font-weight: 700;
         }
         &:deep(.dashed) {
@@ -81,7 +81,7 @@ import { contact } from "../content/Contact";
           transform: translateX(60%);
         }
       }
-      & .email-container {
+      .email-container {
         display: flex;
         margin-top: 30px;
         gap: 10px;
@@ -91,7 +91,7 @@ import { contact } from "../content/Contact";
         &:hover {
           cursor: pointer;
           @media (hover: hover) {
-            & .blue-overlay {
+            .blue-overlay {
               width: 105%;
             }
           }
@@ -99,7 +99,7 @@ import { contact } from "../content/Contact";
         @media screen and (max-width: $breackpoint-medium) {
           margin-top: 20px;
         }
-        & .blue-overlay {
+        .blue-overlay {
           position: absolute;
           top: -2.5px;
           left: -5px;
@@ -114,10 +114,10 @@ import { contact } from "../content/Contact";
             height: 30px;
           }
         }
-        & .email {
+        .email {
           width: fit-content;
           position: relative;
-          & p {
+          p {
             @media screen and (max-width: $breackpoint-small) {
               font-size: $font-size-small;
             }

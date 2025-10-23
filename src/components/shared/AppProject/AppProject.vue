@@ -138,7 +138,7 @@ watch(isMobileDevice, () => {
       background-image: none;
     }
   }
-  & .project-header {
+  .project-header {
     display: flex;
     gap: 3.25rem;
     align-items: center;
@@ -152,10 +152,10 @@ watch(isMobileDevice, () => {
     @media screen and (max-width: $breackpoint-small) {
       gap: 0px;
     }
-    & .project-title {
+    .project-title {
       text-wrap: nowrap;
     }
-    & .project-technologies {
+    .project-technologies {
       overflow: auto;
       display: flex;
       position: relative;
@@ -192,7 +192,7 @@ watch(isMobileDevice, () => {
       }
     }
   }
-  & .project-content {
+  .project-content {
     display: flex;
     @media screen and (max-width: $breackpoint-medium) {
       flex-direction: column;
@@ -223,11 +223,11 @@ watch(isMobileDevice, () => {
         }
       }
 
-      & .image {
+      .image {
         width: 100%;
         height: 100%;
       }
-      & .sembo-logo-container {
+      .sembo-logo-container {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -236,12 +236,12 @@ watch(isMobileDevice, () => {
         overflow: hidden;
         height: 20%;
         aspect-ratio: 1.3/1;
-        & .sembo-logo {
+        .sembo-logo {
           width: 100%;
           height: 100%;
         }
       }
-      & .icon-container {
+      .icon-container {
         margin: 5px 0;
         width: 100%;
         position: absolute;
@@ -256,7 +256,7 @@ watch(isMobileDevice, () => {
           bottom: 5px;
         }
       }
-      & .overlay {
+      .overlay {
         position: absolute;
         background: $dark-gradient;
         top: 50%;
@@ -270,7 +270,7 @@ watch(isMobileDevice, () => {
 
         &.full-overlay {
           transform: translateY(-60%);
-          & .project-description {
+          .project-description {
             top: calc(62.5% - 10px);
             display: inline;
           }
@@ -278,7 +278,7 @@ watch(isMobileDevice, () => {
             transform: rotate(540deg);
           }
         }
-        & .project-description {
+        .project-description {
           transition: $basic-transition-05;
           --webkit-transition: $basic-transition-05;
           width: calc(100% - 50px);
@@ -297,7 +297,7 @@ watch(isMobileDevice, () => {
         }
       }
     }
-    & .project-aside {
+    .project-aside {
       width: 40%;
       gap: 20px;
       padding-left: 30px;
@@ -308,7 +308,7 @@ watch(isMobileDevice, () => {
         width: 100%;
         padding-left: 0;
       }
-      & .project-buttons-container {
+      .project-buttons-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

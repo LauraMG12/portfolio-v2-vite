@@ -8,6 +8,6 @@ interface FooterInfo {
 export const footer: FooterInfo = {
   name: "Laura Mañogil González",
   linkedIn: "LinkedIn",
-  professionalEmail: "laura.lmg12@gmail.com",
+  professionalEmail: "manogil.gonzalez.laura@gmail.com",
   gitHub: "GitHub",
 };

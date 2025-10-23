@@ -81,15 +81,15 @@ watch(isSmallDevice, () => {
   @media screen and (max-width: $breackpoint-small) {
     margin: 0 25px 0 15px;
   }
-  & .header {
+  .header {
     z-index: 12;
     cursor: pointer;
   }
-  & .navigation-items {
+  .navigation-items {
     width: 600px;
     display: flex;
     justify-content: space-between;
-    & .item-container {
+    .item-container {
       padding: 5px 10px;
       border-radius: 20px;
       list-style-type: none;
@@ -97,7 +97,7 @@ watch(isSmallDevice, () => {
       &:hover {
         cursor: pointer;
       }
-      & .item {
+      .item {
         color: $grey;
         font-size: $font-size-p-mobile;
         &:hover {
@@ -124,7 +124,7 @@ watch(isSmallDevice, () => {
     padding: $navigation-height 20px 0 20px;
   }
 
-  & .item-container {
+  .item-container {
     padding: 15px 0 15px 5px;
     width: 100%;
     border-bottom: 1px solid $grey-light;
@@ -133,7 +133,7 @@ watch(isSmallDevice, () => {
     &:first-child {
       margin-top: 30px;
     }
-    & .item {
+    .item {
       color: $grey;
       font-size: $font-size-p-mobile;
       &:hover {

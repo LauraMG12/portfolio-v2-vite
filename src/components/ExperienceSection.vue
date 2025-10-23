@@ -23,7 +23,7 @@ import AppExperience from "../components/shared/AppExperience/AppExperience.vue"
   @media screen and (min-width: $breackpoint-large) {
     width: 100%;
   }
-  & .experience-container {
+  .experience-container {
     display: flex;
     flex-direction: column;
     width: 100%;

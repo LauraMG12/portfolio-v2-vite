@@ -78,7 +78,7 @@ function getImgPath(imageName: string) {
     @media screen and (max-width: $breackpoint-small) {
       transform: none;
     }
-    & .bullet {
+    .bullet {
       left: 0;
       transform: translateX(-10px);
     }
@@ -89,12 +89,12 @@ function getImgPath(imageName: string) {
     padding: 20px 50px 20px 0;
     align-items: end;
     text-align: end;
-    & .bullet {
+    .bullet {
       right: 0;
       transform: translateX(10px);
     }
   }
-  & .bullet {
+  .bullet {
     position: absolute;
     top: 35px;
     width: 20px;
@@ -111,10 +111,10 @@ function getImgPath(imageName: string) {
       background-image: $orange-gradient-90;
     }
   }
-  & .logos-wrapper {
+  .logos-wrapper {
     display: flex;
     gap: 15px;
-    & .logo-container {
+    .logo-container {
       width: 50px;
       height: 50px;
       border-radius: 10px;
@@ -125,18 +125,18 @@ function getImgPath(imageName: string) {
       align-items: center;
       padding: 8px;
 
-      & .logo {
+      .logo {
         height: 100%;
       }
     }
   }
 
-  & .period {
+  .period {
     font-style: italic;
     color: $grey-dark;
   }
-  & .details {
-    & .detail {
+  .details {
+    .detail {
       color: rgb(89, 89, 89);
       font-size: $font-size-small;
       @media screen and (max-width: $breackpoint-small) {

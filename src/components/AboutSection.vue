@@ -20,7 +20,13 @@ function openCV(): void {
     <div class="about-header">
       <h3>{{ about.name }}</h3>
       <div class="about-subheader">
-        <AppPill :name="about.position" color="light" class="frontend-pill" />
+        <AppPill
+          v-for="role in about.position"
+          :key="role"
+          :name="role"
+          color="light"
+          class="role-pill"
+        />
       </div>
     </div>
     <div class="about-content">
@@ -72,7 +78,7 @@ function openCV(): void {
               <a
                 id="AboutEmailButton"
                 aria-label="Compose an email"
-                href="mailto:laura.lmg12@gmail.com"
+                href="mailto:manogil.gonzalez.laura@gmail.com"
                 :class="{ colored: isTouchDevice() }"
               >
                 <SvgIcon name="mail" :size="iconSize" />
@@ -93,21 +99,19 @@ function openCV(): void {
     display: flex;
     align-items: baseline;
     margin-bottom: 35px;
+    gap: 25px;
     @media screen and (max-width: $breackpoint-medium) {
       flex-direction: column;
       gap: 15px;
       margin-bottom: 15px;
       align-items: center;
     }
-    & .frontend-pill {
-      height: 25px;
-      margin: 0 45px;
+    .about-subheader {
+      display: flex;
+      gap: 10px;
 
-      @media screen and (max-width: $breackpoint-medium) {
-        margin: 0 45px 0 0;
-      }
-      @media screen and (max-width: $breackpoint-small) {
-        margin: 0 15px 0 0;
+      .role-pill {
+        height: 25px;
       }
     }
   }
@@ -118,7 +122,7 @@ function openCV(): void {
       flex-direction: column;
       align-items: center;
     }
-    & .image-container {
+    .image-container {
       position: relative;
       width: 40%;
       aspect-ratio: 4/3;
@@ -137,12 +141,12 @@ function openCV(): void {
       @media screen and (max-width: $breackpoint-small) {
         width: 100%;
       }
-      & .image {
-        height: 100%;
+      .image {
+        width: 100%;
         object-fit: contain;
       }
     }
-    & .about {
+    .about {
       width: 60%;
       display: flex;
       flex-direction: column;
@@ -154,27 +158,27 @@ function openCV(): void {
         gap: 25px;
         width: 100%;
       }
-      & .links-container {
+      .links-container {
         display: flex;
         gap: 50px;
         align-items: center;
         @media screen and (max-width: $breackpoint-medium) {
           flex-direction: column;
         }
-        & .circle-links {
+        .circle-links {
           display: flex;
           gap: 30px;
-          & .link {
+          .link {
             cursor: pointer;
             border-radius: 30px;
             &:hover {
               @media (hover: hover) {
-                & a {
+                a {
                   color: $blue-dark;
                 }
               }
             }
-            & a {
+            a {
               transition: $basic-transition-05;
               width: 50px;
               height: 50px;

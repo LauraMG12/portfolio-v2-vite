@@ -56,7 +56,7 @@ const translatePiniaIcon = { x: 2 };
     background-color: $white;
     color: $grey-dark;
   }
-  & .pill-text {
+  .pill-text {
     font-size: $font-size-p-mobile;
     white-space: nowrap;
   }

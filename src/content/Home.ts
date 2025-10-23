@@ -28,7 +28,7 @@ export const highlights: AppHighlights[] = [
 
 export const home: HomeInfo = {
   name: "Laura Mañogil González",
-  position: "frontend developer",
+  position: "web software engineer",
   linkedIn: {
     text: "LinkedIn",
     href: "https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/",

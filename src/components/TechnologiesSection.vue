@@ -20,7 +20,7 @@ import TechnologyGroup from "./shared/AppTechnologyGroup/TechnologyGroup.vue";
 #technologiesSection {
   display: flex;
   flex-direction: column;
-  & .technologies-container {
+  .technologies-container {
     display: flex;
     flex-direction: column;
   }

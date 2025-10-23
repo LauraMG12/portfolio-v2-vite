@@ -86,7 +86,7 @@ setInterval(() => {
     margin-top: calc(50dvh - (v-bind(homeContentHeight) / 2));
     gap: 50px;
     white-space: nowrap;
-    & .subtitle {
+    .subtitle {
       display: flex;
       flex-direction: row;
 
@@ -98,7 +98,7 @@ setInterval(() => {
         align-items: center;
       }
 
-      & .subtitle-highlight {
+      .subtitle-highlight {
         width: 26%;
         margin-right: 0.95rem;
         position: relative;
@@ -112,7 +112,7 @@ setInterval(() => {
           width: 32vmin;
           height: 7vmin;
         }
-        & .hightlight {
+        .hightlight {
           position: absolute;
           right: 0;
           &.blue-highlight {
@@ -135,7 +135,7 @@ setInterval(() => {
           }
         }
 
-        & h2 {
+        h2 {
           font-weight: $font-weight-bold;
         }
       }

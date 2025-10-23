@@ -35,7 +35,7 @@ const props = defineProps<AppButtonProps>();
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .button-wrapper {
   position: relative;
   .background-gradient {
@@ -73,7 +73,7 @@ const props = defineProps<AppButtonProps>();
       &:hover {
         .button.home-button {
           background-color: transparent;
-          & .button-text {
+          .button-text {
             color: $white;
           }
         }
@@ -90,7 +90,7 @@ const props = defineProps<AppButtonProps>();
         height: 38px;
       }
 
-      & .button-text {
+      .button-text {
         color: $black;
         font-weight: 700;
       }

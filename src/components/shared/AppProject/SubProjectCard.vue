@@ -62,11 +62,11 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
   &.colored {
     cursor: pointer;
     transform: translate(-3px, -3px);
-    & .image,
-    & .card-content {
+    .image,
+    .card-content {
       mix-blend-mode: normal;
     }
-    & .githubIcon {
+    .githubIcon {
       color: $blue-dark;
     }
   }
@@ -75,11 +75,11 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
       cursor: pointer;
       transform: translate(-3px, -3px);
       box-shadow: 3px 3px 0px 0px $grey-dark;
-      & .image,
-      & .card-content {
+      .image,
+      .card-content {
         mix-blend-mode: normal;
       }
-      & .githubIcon {
+      .githubIcon {
         color: $blue-dark;
       }
     }
@@ -88,12 +88,12 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
       box-shadow: 0px 0px 0px 0px $grey-dark;
     }
   }
-  & .image {
+  .image {
     width: 100%;
     mix-blend-mode: luminosity;
     object-fit: cover;
   }
-  & .card-content {
+  .card-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -118,7 +118,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
       }
     }
 
-    & .project-title {
+    .project-title {
       font-size: $font-size-p-desktop;
       color: $grey-dark;
       font-weight: $font-weight-bold;
@@ -126,7 +126,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
         font-size: $font-size-button;
       }
     }
-    & .project-description {
+    .project-description {
       font-size: $font-size-small;
       color: $grey-dark;
       font-weight: $font-weight-normal;
@@ -135,7 +135,7 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
       }
     }
   }
-  & .githubIcon {
+  .githubIcon {
     align-self: end;
     transform: translate(-10px, -10px);
     background-color: $grey-light;

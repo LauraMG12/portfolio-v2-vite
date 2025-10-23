@@ -33,7 +33,7 @@ const mobileIconSize = computed(() =>
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .button {
   background-color: transparent;
   position: relative;
@@ -72,7 +72,7 @@ const mobileIconSize = computed(() =>
       }
     }
   }
-  & .button-text {
+  .button-text {
     font-size: $font-size-p-mobile;
     z-index: 1;
   }

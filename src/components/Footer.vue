@@ -43,7 +43,9 @@ const mobileIconSize = computed(() =>
       </p>
     </div>
 
-    <p class="authory">@ <span>Laura Mañogil</span> Portfolio 2024</p>
+    <p class="authory">
+      @ <span>Laura Mañogil</span> Portfolio {{ new Date().getFullYear() }}
+    </p>
   </section>
 </template>
 
@@ -91,7 +93,7 @@ const mobileIconSize = computed(() =>
       }
     }
   }
-  & .authory {
+  .authory {
     position: absolute;
     bottom: 0;
     margin-bottom: 10px;
@@ -99,7 +101,7 @@ const mobileIconSize = computed(() =>
     font-size: 0.8rem;
     font-weight: 600;
     cursor: default;
-    & span {
+    span {
       color: $blue-dark;
     }
   }

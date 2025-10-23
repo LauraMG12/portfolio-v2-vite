@@ -18,7 +18,7 @@ import { scrollToSection } from "@/state/AppState";
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
+@import "@/styles/main.scss";
 .item-container {
   padding: 5px 10px;
   border-radius: 20px;
@@ -29,7 +29,7 @@ import { scrollToSection } from "@/state/AppState";
   &.selected {
     background-color: $grey-light;
   }
-  & .item {
+  .item {
     color: $grey;
     font-size: $font-size-p-mobile;
     &.selected {

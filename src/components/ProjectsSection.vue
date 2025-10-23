@@ -33,7 +33,7 @@ import { projects } from "../content/Projects";
   flex-direction: column;
   position: relative;
   margin-top: -3rem;
-  & .projects-container {
+  .projects-container {
     display: flex;
     flex-direction: column;
     gap: 100px;
