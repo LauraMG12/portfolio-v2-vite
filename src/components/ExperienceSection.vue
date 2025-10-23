@@ -16,7 +16,6 @@ import AppExperience from "../components/shared/AppExperience/AppExperience.vue"
   </section>
 </template>
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #experienceSection {
   display: flex;
   flex-direction: column;

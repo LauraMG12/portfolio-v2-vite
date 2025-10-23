@@ -18,7 +18,6 @@ import { scrollToSection } from "@/state/AppState";
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .item-container {
   padding: 5px 10px;
   border-radius: 20px;

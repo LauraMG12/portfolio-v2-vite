@@ -115,7 +115,6 @@ watch(isMobileDevice, () => {
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .project-container {
   width: 100%;
   padding: 1.5rem;

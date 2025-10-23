@@ -63,7 +63,6 @@ setInterval(() => {
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #homePage {
   height: 100dvh;
   .background {
@@ -93,7 +92,7 @@ setInterval(() => {
       width: 100%;
       justify-content: center;
 
-      @media screen and (max-width: $breackpoint-small) {
+      @media screen and (max-width: $breackpoint-medium) {
         flex-direction: column;
         align-items: center;
       }
@@ -107,7 +106,7 @@ setInterval(() => {
           width: 19vmax;
           margin-right: 0.55rem;
         }
-        @media screen and (max-width: $breackpoint-small) {
+        @media screen and (max-width: $breackpoint-medium) {
           margin: 0;
           width: 32vmin;
           height: 7vmin;
@@ -149,6 +148,9 @@ setInterval(() => {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+      }
+      .home-button {
+        width: 185px;
       }
     }
   }

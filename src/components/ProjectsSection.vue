@@ -27,7 +27,6 @@ import { projects } from "../content/Projects";
   </article>
 </template>
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #projectsSection {
   display: flex;
   flex-direction: column;

@@ -60,7 +60,6 @@ function getImgPath(imageName: string) {
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .experience-wrapper {
   width: 50%;
   display: flex;

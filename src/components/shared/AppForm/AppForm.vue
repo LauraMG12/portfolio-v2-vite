@@ -82,7 +82,6 @@ async function submitForm() {
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .contact-form {
   width: 40%;
   display: flex;

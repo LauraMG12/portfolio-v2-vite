@@ -53,8 +53,7 @@ watch(isMobileNavigationOpened, () => {
 </template>
 
 <style lang="scss">
-@import "@/styles/main.scss";
-
+@use "@/styles/main.scss" as *;
 #app {
   #navigation {
     width: 100vw;

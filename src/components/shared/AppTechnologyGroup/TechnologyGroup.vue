@@ -72,7 +72,6 @@ const translateIcon = { x: 2, y: 0 };
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .technologies-group {
   @media screen and (min-width: $breackpoint-large) {
     width: 1065px;

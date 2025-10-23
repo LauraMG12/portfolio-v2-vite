@@ -32,7 +32,6 @@ const translatePiniaIcon = { x: 2 };
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .pill-container {
   padding: 5px 10px;
   border-radius: 20px;

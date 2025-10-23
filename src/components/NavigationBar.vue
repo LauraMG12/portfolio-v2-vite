@@ -68,7 +68,6 @@ watch(isSmallDevice, () => {
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .navigation {
   margin: 0 50px;
   height: $navigation-height;

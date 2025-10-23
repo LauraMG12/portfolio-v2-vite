@@ -16,7 +16,6 @@ import TechnologyGroup from "./shared/AppTechnologyGroup/TechnologyGroup.vue";
   </section>
 </template>
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #technologiesSection {
   display: flex;
   flex-direction: column;

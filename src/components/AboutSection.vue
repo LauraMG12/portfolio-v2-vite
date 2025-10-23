@@ -91,7 +91,6 @@ function openCV(): void {
   </section>
 </template>
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #aboutSection {
   display: flex;
   flex-direction: column;
@@ -143,7 +142,8 @@ function openCV(): void {
       }
       .image {
         width: 100%;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
       }
     }
     .about {

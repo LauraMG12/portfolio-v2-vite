@@ -20,7 +20,6 @@ const elementLoaded = ref<boolean>(false);
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/main.scss';
 .icon-container {
   width: 24px;
   cursor: pointer;

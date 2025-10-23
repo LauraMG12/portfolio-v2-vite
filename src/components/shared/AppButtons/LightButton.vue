@@ -35,7 +35,6 @@ const props = defineProps<AppButtonProps>();
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .button-wrapper {
   position: relative;
   .background-gradient {

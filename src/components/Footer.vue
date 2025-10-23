@@ -50,7 +50,6 @@ const mobileIconSize = computed(() =>
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #footer {
   width: 100vw;
   height: 15rem;

@@ -36,7 +36,6 @@ import { contact } from "../content/Contact";
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 #contactSection {
   display: flex;
   justify-content: space-between;

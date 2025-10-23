@@ -15,7 +15,6 @@ const props = defineProps<AppLoadingDotsProps>();
 </template>
 
 <style lang="scss" scoped>
-@import '@/styles/main.scss';
 .app-loading-dots {
   height: 21px;
   padding: 0 10px;

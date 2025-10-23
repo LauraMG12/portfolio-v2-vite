@@ -44,7 +44,6 @@ const projectImage = new URL(props.information.image, import.meta.url).href;
 </template>
 
 <style scoped lang="scss">
-@import "@/styles/main.scss";
 .card {
   border-radius: 10px;
   overflow: hidden;
